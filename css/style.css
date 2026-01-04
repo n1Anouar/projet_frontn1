@@ -1,0 +1,222 @@
+
+@media (min-width: 992px) {
+        .display-4 {
+            font-size: 3.5rem;
+        }
+    }
+
+    /* --- New Styles for Header Components --- */
+
+    :root {
+        --bleu: #0057ff;
+        --gold: #d4af37;
+        --dark-bg: #0a0a0a;
+        --light-bg: #ffffff;
+    }
+
+    /* Top Info Bar */
+    .top-info-bar {
+        background-color: #111; /* Very dark grey, almost black */
+        color: #ddd;
+        font-size: 0.85rem;
+        padding: 8px 0;
+        border-bottom: 1px solid #222;
+    }
+
+    .top-info-bar .fw-bold {
+        color: var(--gold);
+    }
+
+    /* Middle Header */
+    .middle-header {
+        background-color: var(--light-bg);
+        padding: 1.5rem 0;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        position: relative;
+        z-index: 100;
+    }
+
+    /* Search Bar */
+    .input-group .search-bar.form-control {
+        border-radius: 50px 0 0 50px;
+        border: 2px solid black;
+        padding-left: 20px;
+        height: 45px;
+    }
+    
+    .input-group .search-bar.form-control:focus {
+        border-color: var(--bleu);
+        box-shadow: none;
+    }
+
+    .input-group .search-bar.btn {
+        border-radius: 0 50px 50px 0;
+        background-color: var(--bleu);
+        border: 2px solid var(--bleu);
+        color: white;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .input-group .search-bar.btn:hover {
+        background-color: #0045cc;
+        border-color: #0045cc;
+    }
+
+    /* Icons Header */
+    .middle-header a i {
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+    
+    .middle-header a:hover i {
+        color: var(--bleu) !important;
+    }
+
+    /* Nav Bar */
+    .nav-gamer {
+        background-color: var(--bleu);
+        box-shadow: 0 4px 12px -2px rgba(0, 87, 255, 0.3);
+    }
+
+    .nav-gamer a {
+        color: white;
+        text-decoration: none;
+        padding: 15px 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        border-bottom: 4px solid transparent;
+        display: inline-block;
+    }
+
+    .nav-gamer a:hover,
+    .nav-gamer a.nav-active {
+        background-color: rgba(0, 0, 0, 0.15);
+        border-bottom-color: var(--gold);
+    }
+
+    /* Custom Utilities */
+    .h-60 {
+        height: 60% !important;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* --- Contact Section Styles --- */
+    .contact-section {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contact-overlay {
+        background-color: rgba(10, 10, 10, 0.85); /* Dark overlay */
+        padding: 5rem 0;
+    }
+
+    .section-title span {
+        color: var(--bleu);
+    }
+
+    .section-divider {
+        height: 3px;
+        width: 60px;
+        background-color: var(--gold);
+        margin: 1rem auto;
+    }
+
+    /* Contact Form & Info Cards */
+    .contact-card {
+        background-color: rgba(255, 255, 255, 0.05); /* Glassmorphism effect */
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 2rem;
+    }
+
+    /* Form Controls Dark Theme */
+    .form-control-dark {
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px solid #333;
+        color: #fff;
+        padding: 12px 20px;
+    }
+
+    .form-control-dark:focus {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-color: var(--bleu);
+        color: #fff;
+        box-shadow: 0 0 0 0.25rem rgba(0, 87, 255, 0.25);
+    }
+
+    .form-control-dark::placeholder {
+        color: #888;
+    }
+
+    /* Contact Info Icons */
+    .contact-icon-box {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(212, 175, 55, 0.1); /* Gold tint */
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--gold);
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+    }
+
+    .contact-info-item:hover .contact-icon-box {
+        background-color: var(--gold);
+        color: #000;
+        transform: scale(1.1);
+    }
+
+    /* --- Offcanvas Cart Styles --- */
+    .offcanvas {
+        background-color: rgba(15, 15, 15, 0.95) !important;
+        backdrop-filter: blur(10px);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .offcanvas-header .btn-close {
+        opacity: 0.8;
+    }
+
+    .offcanvas-header .btn-close:hover {
+        opacity: 1;
+    }
+
+    .cart-item {
+        transition: all 0.2s ease;
+        border: 1px solid transparent;
+    }
+
+    .cart-item:hover {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+        border-color: rgba(255, 255, 255, 0.05);
+    }
+
+    /* Custom Scrollbar for Cart */
+    #cart-items::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    #cart-items::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    #cart-items::-webkit-scrollbar-thumb {
+        background-color: var(--bleu);
+        border-radius: 10px;
+    }
+
+    /* --- Checkout Styles --- */
+    /* Brand focus colors for forms */
+    .form-control:focus, .form-select:focus {
+        border-color: var(--bleu);
+        box-shadow: 0 0 0 0.25rem rgba(0, 87, 255, 0.25);
+    }
